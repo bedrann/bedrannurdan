@@ -191,7 +191,8 @@ document.getElementById('status').innerHTML =
 
 const fileName =
 folder + '/' + Date.now() + '_' + file.name;
-
+console.log(fileName);
+alert(fileName);
 const { error } =
 await client.storage
 .from('Wedding media')
