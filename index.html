@@ -152,10 +152,16 @@ document.getElementById('status').innerHTML =
 const fileName =
 folder + '/' + Date.now() + '_' + file.name;
 
-const { error } =
+const { data, error } =
 await client.storage
 .from('Wedding media')
-.upload(fileName,file);
+.upload(fileName, file, {
+  contentType: file.type,
+  upsert: false
+});
+
+console.log(data);
+console.log(error);
 
 if(error){
 
