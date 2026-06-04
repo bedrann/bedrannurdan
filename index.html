@@ -3,32 +3,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bedran & Nurdan</title><style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#d4af37,#f5f5f5);
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-background:#faf7f2;
-font-family:Arial,sans-serif;
-text-align:center;
+padding:20px;
 }
 
-.box{
-padding:30px;
+.card{
+background:white;
+width:100%;
+max-width:700px;
+border-radius:30px;
+padding:40px 30px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
 
 h1{
 font-size:48px;
-margin:0;
+color:#b8860b;
+margin-bottom:10px;
 }
 
-p{
-font-size:20px;
+.line{
+width:100px;
+height:3px;
+background:#b8860b;
+margin:15px auto 25px;
 }
-</style></head><body><div class="box">
-<h1>💍 Bedran & Nurdan</h1><p>26 Temmuz 2026 - Nişan</p>
-<p>24 Ağustos 2026 - Diyarbakır Düğünü</p>
-<p>30 Ağustos 2026 - İstanbul Düğünü</p><h2>Site Başarıyla Çalışıyor ❤️</h2>
-</div></body>
+
+.desc{
+color:#666;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.event{
+background:#fafafa;
+padding:18px;
+border-radius:15px;
+margin-bottom:15px;
+border-left:5px solid #b8860b;
+}
+
+.event strong{
+display:block;
+font-size:20px;
+margin-bottom:5px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+background:#b8860b;
+color:white;
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.footer{
+margin-top:25px;
+color:#777;
+font-size:14px;
+}
+</style></head>
+<body><div class="card"><h1>💍 Bedran & Nurdan</h1><div class="line"></div><p class="desc">
+Birlikte yazdığımız hikâyenin en güzel anılarını bizimle paylaşın.
+</p><div class="event">
+<strong>💍 Nişan</strong>
+26 Temmuz 2026
+</div><div class="event">
+<strong>🤍 Diyarbakır Düğünü</strong>
+24 Ağustos 2026
+</div><div class="event">
+<strong>✨ İstanbul Düğünü</strong>
+30 Ağustos 2026
+</div><a href="#" class="button">
+📸 Fotoğraf ve Video Yükle
+</a><div class="footer">
+Paylaşılan içerikler sadece gelin ve damat tarafından görüntülenebilir ❤️
+</div></div></body>
 </html>
