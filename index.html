@@ -1,98 +1,121 @@
 <!DOCTYPE html><html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bedran & Nurdan</title><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bedran & Nurdan</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"><style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#d4af37,#f5f5f5);
+background:#111315;
+font-family:'Montserrat',sans-serif;
 min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:20px;
+padding:25px;
+color:white;
 }
 
 .card{
-background:white;
 width:100%;
-max-width:700px;
+max-width:750px;
+background:#1a1d20;
+border:1px solid rgba(255,255,255,.08);
 border-radius:30px;
-padding:40px 30px;
+padding:50px 35px;
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
+box-shadow:0 30px 80px rgba(0,0,0,.45);
 }
 
-h1{
-font-size:48px;
-color:#b8860b;
+.names{
+font-family:'Cormorant Garamond',serif;
+font-size:68px;
+font-weight:600;
+color:#e4c78d;
 margin-bottom:10px;
 }
 
-.line{
-width:100px;
-height:3px;
-background:#b8860b;
-margin:15px auto 25px;
+.date{
+letter-spacing:4px;
+font-size:12px;
+color:#888;
+text-transform:uppercase;
+margin-bottom:35px;
 }
 
 .desc{
-color:#666;
-line-height:1.7;
-margin-bottom:25px;
+max-width:500px;
+margin:auto;
+line-height:1.9;
+color:#cfcfcf;
+margin-bottom:40px;
 }
 
 .event{
-background:#fafafa;
-padding:18px;
-border-radius:15px;
+padding:22px;
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
 margin-bottom:15px;
-border-left:5px solid #b8860b;
+transition:.3s;
 }
 
-.event strong{
-display:block;
+.event:hover{
+border-color:#e4c78d;
+transform:translateY(-2px);
+}
+
+.event-title{
 font-size:20px;
-margin-bottom:5px;
+font-weight:500;
+margin-bottom:8px;
+color:#e4c78d;
+}
+
+.event-date{
+color:#bdbdbd;
 }
 
 .button{
 display:inline-block;
-margin-top:20px;
-background:#b8860b;
-color:white;
-padding:15px 30px;
-border-radius:12px;
+margin-top:25px;
+padding:18px 38px;
+border-radius:14px;
+background:#e4c78d;
+color:#111315;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+font-size:15px;
 }
 
 .footer{
-margin-top:25px;
-color:#777;
-font-size:14px;
+margin-top:30px;
+font-size:13px;
+color:#8d8d8d;
 }
+
 </style></head>
-<body><div class="card"><h1>💍 Bedran & Nurdan</h1><div class="line"></div><p class="desc">
-Birlikte yazdığımız hikâyenin en güzel anılarını bizimle paylaşın.
-</p><div class="event">
-<strong>💍 Nişan</strong>
-26 Temmuz 2026
+<body><div class="card"><div class="names">
+Bedran & Nurdan
+</div><div class="date">
+2026
+</div><div class="desc">
+Bu özel günlerde çektiğiniz fotoğraf ve videoları bizimle paylaşabilirsiniz.
 </div><div class="event">
-<strong>🤍 Diyarbakır Düğünü</strong>
-24 Ağustos 2026
+<div class="event-title">Nişan</div>
+<div class="event-date">26 Temmuz 2026</div>
 </div><div class="event">
-<strong>✨ İstanbul Düğünü</strong>
-30 Ağustos 2026
+<div class="event-title">Diyarbakır Düğünü</div>
+<div class="event-date">24 Ağustos 2026</div>
+</div><div class="event">
+<div class="event-title">İstanbul Düğünü</div>
+<div class="event-date">30 Ağustos 2026</div>
 </div><a href="#" class="button">
-📸 Fotoğraf ve Video Yükle
+Fotoğraf ve Video Yükle
 </a><div class="footer">
-Paylaşılan içerikler sadece gelin ve damat tarafından görüntülenebilir ❤️
+Paylaşılan içerikler yalnızca gelin ve damat tarafından görüntülenebilir.
 </div></div></body>
 </html>
