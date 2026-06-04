@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bedran & Nurdan</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedran & Nurdan</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>
 *{
 margin:0;
 padding:0;
@@ -10,71 +10,64 @@ box-sizing:border-box;
 }
 
 body{
-background:#111315;
+background:#0f1113;
 font-family:'Montserrat',sans-serif;
 min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:25px;
+padding:20px;
 color:white;
 }
 
 .card{
 width:100%;
 max-width:750px;
-background:#1a1d20;
-border:1px solid rgba(255,255,255,.08);
+background:#181b1f;
 border-radius:30px;
-padding:50px 35px;
-text-align:center;
-box-shadow:0 30px 80px rgba(0,0,0,.45);
+padding:40px 30px;
+box-shadow:0 20px 70px rgba(0,0,0,.45);
+border:1px solid rgba(255,255,255,.08);
 }
 
 .names{
 font-family:'Cormorant Garamond',serif;
-font-size:68px;
-font-weight:600;
-color:#e4c78d;
+font-size:64px;
+text-align:center;
+color:#e3c88f;
 margin-bottom:10px;
 }
 
-.date{
-letter-spacing:4px;
+.year{
+text-align:center;
+letter-spacing:5px;
 font-size:12px;
 color:#888;
-text-transform:uppercase;
-margin-bottom:35px;
+margin-bottom:25px;
 }
 
 .desc{
-max-width:500px;
-margin:auto;
-line-height:1.9;
+text-align:center;
+line-height:1.8;
 color:#cfcfcf;
-margin-bottom:40px;
+margin-bottom:30px;
 }
 
 .event{
-padding:22px;
-border:1px solid rgba(255,255,255,.08);
-border-radius:18px;
-margin-bottom:15px;
+background:#22262b;
+padding:18px;
+border-radius:16px;
+margin-bottom:12px;
 }
 
 .event-title{
-font-size:20px;
-font-weight:500;
-margin-bottom:8px;
-color:#e4c78d;
-}
-
-.event-date{
-color:#bdbdbd;
+color:#e3c88f;
+font-weight:600;
+margin-bottom:5px;
 }
 
 .upload-box{
-margin-top:35px;
+margin-top:25px;
 padding-top:25px;
 border-top:1px solid rgba(255,255,255,.08);
 }
@@ -83,85 +76,57 @@ select,
 input[type=file]{
 width:100%;
 padding:15px;
-background:#25292d;
+background:#22262b;
 border:1px solid #333;
 border-radius:12px;
 color:white;
 margin-bottom:15px;
 }
 
-.button{
+button{
 width:100%;
-padding:18px;
+padding:16px;
+background:#e3c88f;
+color:#111;
 border:none;
-border-radius:14px;
-background:#e4c78d;
-color:#111315;
+border-radius:12px;
 font-weight:600;
-font-size:16px;
 cursor:pointer;
 }
 
 #status{
 margin-top:15px;
-font-size:14px;
+text-align:center;
 }
 
 .footer{
-margin-top:30px;
+margin-top:25px;
+text-align:center;
 font-size:13px;
-color:#8d8d8d;
+color:#888;
 }
-
-@media(max-width:600px){
-
-.names{
-font-size:48px;
-}
-
-.card{
-padding:35px 20px;
-}
-
-}
-
-</style></head>
-<body><div class="card"><div class="names">
-Bedran & Nurdan
-</div><div class="date">
-2026
-</div><div class="desc">
-Bu özel günlerde çektiğiniz fotoğraf ve videoları bizimle paylaşabilirsiniz.
+</style></head><body><div class="card"><div class="names">Bedran & Nurdan</div><div class="year">2026</div><div class="desc">
+Mutlu günümüzde çektiğiniz fotoğraf ve videoları bizimle paylaşabilirsiniz.
 </div><div class="event">
-<div class="event-title">Nişan</div>
-<div class="event-date">26 Temmuz 2026</div>
+<div class="event-title">💍 Nişan</div>
+26 Temmuz 2026
 </div><div class="event">
-<div class="event-title">Diyarbakır Düğünü</div>
-<div class="event-date">24 Ağustos 2026</div>
+<div class="event-title">🤍 Diyarbakır Düğünü</div>
+24 Ağustos 2026
 </div><div class="event">
-<div class="event-title">İstanbul Düğünü</div>
-<div class="event-date">30 Ağustos 2026</div>
+<div class="event-title">✨ İstanbul Düğünü</div>
+30 Ağustos 2026
 </div><div class="upload-box"><select id="eventSelect">
 <option value="nisan">Nişan</option>
 <option value="diyarbakir">Diyarbakır Düğünü</option>
 <option value="istanbul">İstanbul Düğünü</option>
-</select><input
-type="file"
-id="fileInput"
-accept="image/*,video/*">
-
-<button
-class="button"
-onclick="uploadFile()">
-Fotoğraf ve Video Yükle
-</button>
-
-<div id="status"></div></div><div class="footer">
-Paylaşılan içerikler yalnızca gelin ve damat tarafından görüntülenebilir.
+</select><input type="file" id="fileInput" accept="image/*,video/*"><button onclick="uploadFile()">
+Fotoğraf / Video Yükle
+</button><div id="status"></div></div><div class="footer">
+Paylaşılan içerikler yalnızca gelin ve damat tarafından görüntülenebilir ❤️
 </div></div><script>
-alert("JS çalıştı");
-  alert(typeof window.supabase);
-const { createClient } = supabase;
+
+const { createClient } = window.supabase;
 
 const client = createClient(
 'https://vbdtzrgzxbfnipbqdzrt.supabase.co',
@@ -169,12 +134,7 @@ const client = createClient(
 );
 
 async function uploadFile(){
-async function uploadFile(){
 
-alert("Butona basıldı");
-
-const file =
-document.getElementById('fileInput').files[0];
 const file =
 document.getElementById('fileInput').files[0];
 
@@ -191,19 +151,20 @@ document.getElementById('status').innerHTML =
 
 const fileName =
 folder + '/' + Date.now() + '_' + file.name;
-console.log(fileName);
-alert(fileName);
+
 const { error } =
 await client.storage
 .from('Wedding media')
 .upload(fileName,file);
 
 if(error){
-alert(JSON.stringify(error));
+
 document.getElementById('status').innerHTML =
 '❌ ' + error.message;
+
 return;
 }
+
 document.getElementById('status').innerHTML =
 '✅ Yükleme başarılı. Teşekkür ederiz ❤️';
 
