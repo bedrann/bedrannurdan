@@ -199,13 +199,11 @@ await client.storage
 .upload(fileName,file);
 
 if(error){
-
+alert(JSON.stringify(error));
 document.getElementById('status').innerHTML =
 '❌ ' + error.message;
-
 return;
 }
-
 document.getElementById('status').innerHTML =
 '✅ Yükleme başarılı. Teşekkür ederiz ❤️';
 
