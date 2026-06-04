@@ -160,7 +160,9 @@ Fotoğraf ve Video Yükle
 Paylaşılan içerikler yalnızca gelin ve damat tarafından görüntülenebilir.
 </div></div><script>
 alert("JS çalıştı");
-const supabase = window.supabase.createClient(
+const { createClient } = supabase;
+
+const client = createClient(
 'https://vbdtzrgzxbfnipbqdzrt.supabase.co',
 'sb_publishable_kHAV2_4Y2lEWzBzPuDL0Cg_w_EuAOzk'
 );
